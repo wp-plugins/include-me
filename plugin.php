@@ -3,7 +3,7 @@
 Plugin Name: Include Me
 Plugin URI: http://www.satollo.net/plugins/include-me
 Description: Directly include HTML or PHP in any post/page to embed advanced functionalities.
-Version: 1.0.0
+Version: 1.0.1
 Author: Satollo
 Author URI: http://www.satollo.net
 Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
@@ -41,8 +41,8 @@ add_shortcode('includeme', 'includeme_call');
 function includeme_call($attrs, $content=null) {
     global $includeme_options;
 
-    $file = $attrs['file'];
-    if ($file) {
+    if (isset($attrs['file'])) {
+        $file = strip_tags($attrs['file']);
         if ($file[0] != '/') $file = ABSPATH . $file;
 
         ob_start();
@@ -53,6 +53,7 @@ function includeme_call($attrs, $content=null) {
     else {
         $tmp = '';
         foreach ($attrs as $key=>$value) {
+            if ($key == 'src') $value = strip_tags($value);
             $value = str_replace('&amp;', '&', $value);
             if ($key == 'src') $value = strip_tags($value);
             $tmp .= ' ' . $key . '="' . $value . '"';
