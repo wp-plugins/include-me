@@ -3,7 +3,7 @@ Tags: php, include, execute
 Requires at least: 2.5
 Tested up to: 2.9.2
 Stable tag: trunk
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2545483
+Donate link: http://www.satollo.net/donations
 Contributors: satollo
 
 Include Me lets to include any external file (textual, HTML or PHP) in posts or pages.
