@@ -1,6 +1,19 @@
 <div class="wrap">
 
-<h2>Include Me <small><?php echo INCLUDE_ME; ?></small></h2>
+<h2>Include Me</h2>
+
+<div style="border: 1px solid #6f6; background-color: #efe; padding: 10px;">
+    <table>
+        <tr>
+        <td valign="middle" align="center">
+            <a href="http://www.satollo.net/donations" target="_blank"><img src="<?php echo WP_PLUGIN_URL . '/include-me/donate.gif'; ?>"/></a></td>
+        <td valign="middle" align="left">
+            A donation is like a diamond: it's forever. There is <a href="http://www.satollo.net/donations" target="_blank">something
+            to read about donations</a>.
+        </td>
+    </tr>
+    </table>
+</div>
 
 <p>
     Include Me has not options to be set. Just 
@@ -8,10 +21,4 @@
     on how to use the short tag [includeme] in your post or pages.
 </p>
 
-<h3>Donations (not to me)</h3>
-<p>
-    Plase take the time to read my thoughts on
-    <a href="http://www.satollo.net/donations" target="_blank">donation page</a>
-    even if you have only a little intention to make a donation.
-</p>
 </div>

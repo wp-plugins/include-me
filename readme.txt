@@ -1,19 +1,25 @@
 === Include Me ===
 Tags: php, include, execute
 Requires at least: 2.5
-Tested up to: 2.9.2
+Tested up to: 3.0.4
 Stable tag: trunk
 Donate link: http://www.satollo.net/donations
 Contributors: satollo
 
-Include Me lets to include any external file (textual, HTML or PHP) in posts or pages.
+Include Me helps to include any external file (textual, HTML or PHP) in posts or pages.
 
 == Description ==
 
 Include Me helps to include in posts or pages external files usually to be shared
-between different posts or pages. The best way to use it is to include functionalities
+between different posts or pages or that contains PHP or other code that can be
+compromised by the visual editor.
+
+The best way to use it is to include functionalities
 written in external PHP that will be rendered in post body or to include pieces of
 javascript that will be hard to add with WordPress editor.
+
+An example can be the code supplied by chat services or widgets to be shown in a
+full page (not in a side bar) like the ones of Facebook or MyBlogLog.
 
 Inclusions can be rendered with IFRAME if needed to create boxes that display
 external web pages.
