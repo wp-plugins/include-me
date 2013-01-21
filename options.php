@@ -1,24 +1,26 @@
 <div class="wrap">
+    <div id="satollo-header">
+        <a href="http://www.satollo.net/plugins/include-me" target="_blank">Get Help</a>
+        <a href="http://www.satollo.net/forums" target="_blank">Forum</a>
 
-<h2>Include Me</h2>
+        <form style="display: inline; margin: 0;" action="http://www.satollo.net/wp-content/plugins/newsletter/do/subscribe.php" method="post" target="_blank">
+            Subscribe to satollo.net <input type="email" name="ne" required placeholder="Your email">
+            <input type="hidden" name="nr" value="include-me">
+            <input type="submit" value="Go">
+        </form>
 
-<div style="border: 1px solid #6f6; background-color: #efe; padding: 10px;">
-    <table>
-        <tr>
-        <td valign="middle" align="center">
-            <a href="http://www.satollo.net/donations" target="_blank"><img src="<?php echo WP_PLUGIN_URL . '/include-me/donate.gif'; ?>"/></a></td>
-        <td valign="middle" align="left">
-            A donation is like a diamond: it's forever. There is <a href="http://www.satollo.net/donations" target="_blank">something
-            to read about donations</a>.
-        </td>
-    </tr>
-    </table>
-</div>
+        <a href="https://www.facebook.com/satollo.net" target="_blank"><img style="vertical-align: bottom" src="http://www.satollo.net/images/facebook.png"></a>
 
-<p>
-    Include Me has not options to be set. Just 
-    <a href="http://www.satollo.net/plugins/include-me" target="_blank">read the official documentation</a>
-    on how to use the short tag [includeme] in your post or pages.
-</p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5PHGDGNHAYLJ8" target="_blank"><img style="vertical-align: bottom" src="http://www.satollo.net/images/donate.png"></a>
+        <a href="http://www.satollo.net/donations" target="_blank">Even <b>1$</b> helps: read more</a>
+    </div>
+    
+    <h2>Include Me</h2>
+
+    <p>
+        Include Me has not options to be set. Just 
+        <a href="http://www.satollo.net/plugins/include-me" target="_blank">read the official documentation</a>
+        on how to use the short tag [includeme] in your post or pages.
+    </p>
 
 </div>

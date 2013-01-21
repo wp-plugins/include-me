@@ -3,10 +3,9 @@
 Plugin Name: Include Me
 Plugin URI: http://www.satollo.net/plugins/include-me
 Description: Directly include HTML or PHP in any post/page to embed advanced functionalities.
-Version: 1.0.3
-Author: Satollo
+Version: 1.0.4
+Author: Stefano Lissa
 Author URI: http://www.satollo.net
-Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
 */
 
 /*	Copyright 2008 Satollo  (email : satollo@gmail.com)
@@ -26,12 +25,19 @@ Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
+add_action('admin_head', 'includeme_admin_head');
+function includeme_admin_head()
+{
+    if (strpos($_GET['page'], basename(dirname(__FILE__)) . '/') === 0) {
+        echo '<link type="text/css" rel="stylesheet" href="' . plugins_url('admin.css', __FILE__) . '">';
+    }
+}
+
 add_action('admin_menu', 'includeme_admin_menu');
 function includeme_admin_menu()
 {
     add_options_page('Include Me', 'Include Me', 'manage_options', 'include-me/options.php');
 }
-
 
 add_shortcode('includeme', 'includeme_call');
 

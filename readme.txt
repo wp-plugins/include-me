@@ -1,10 +1,9 @@
 === Include Me ===
 Tags: php, include, execute
 Requires at least: 2.5
-Tested up to: 3.0.4
+Tested up to: 3.5
 Stable tag: trunk
 Donate link: http://www.satollo.net/donations
-Contributors: satollo
 
 Include Me helps to include any external file (textual, HTML or PHP) in posts or pages.
 
@@ -37,3 +36,9 @@ No questions have been asked.
 == Screenshots ==
 
 No screenshots are available.
+
+== Changelog ==
+
+= 1.0.4 =
+
+* Administrative styles and header
