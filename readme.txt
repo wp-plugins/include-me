@@ -39,6 +39,10 @@ No screenshots are available.
 
 == Changelog ==
 
+= 1.0.5 =
+
+* Added short codes execution feature on included content (by Rusty Eddy)
+
 = 1.0.4 =
 
 * Administrative styles and header

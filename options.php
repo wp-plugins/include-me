@@ -1,3 +1,12 @@
+<?php
+if (wp_verify_nonce($_POST['_wpnonce'], 'save')) {
+    $options = stripslashes_deep($_POST['options']);
+    update_option('includeme', $options);
+}
+else {
+    $options = get_option('includeme', array());
+}
+?>
 <div class="wrap">
     <div id="satollo-header">
         <a href="http://www.satollo.net/plugins/include-me" target="_blank">Get Help</a>
@@ -18,9 +27,26 @@
     <h2>Include Me</h2>
 
     <p>
-        Include Me has not options to be set. Just 
-        <a href="http://www.satollo.net/plugins/include-me" target="_blank">read the official documentation</a>
-        on how to use the short tag [includeme] in your post or pages.
+        Read
+        <a href="http://www.satollo.net/plugins/include-me" target="_blank">the official documentation</a>
+        on how to use the short tag [includeme] in your posts or pages.
     </p>
+    
+    <form action="" method="post">
+        <?php wp_nonce_field('save') ?>
+        <table class="form-table">
+            <tr>
+                <th>Execute shortcodes on included files</th>
+                <td>
+                    <input type="checkbox" name="options[shortcode]" value="1" <?php echo isset($options['shortcode']) ? 'checked' : ''; ?> />
+                    if checked short codes (like [gallery]) contained in included files will be executed as if they where inside the
+                    post or page body content. Probably usage of this feature is very rare.
+                </td>
+            </tr>    
+        </table>
+         <p class="submit">
+            <input class="button button-primary" type="submit" name="save" value="Save"/>
+        </p>
+    </form>
 
 </div>
