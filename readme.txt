@@ -1,7 +1,7 @@
 === Include Me ===
 Tags: php, include, execute
 Requires at least: 2.5
-Tested up to: 3.5
+Tested up to: 3.5.2
 Stable tag: trunk
 Donate link: http://www.satollo.net/donations
 
@@ -38,6 +38,10 @@ No questions have been asked.
 No screenshots are available.
 
 == Changelog ==
+
+= 1.0.6 =
+
+* Improvements
 
 = 1.0.5 =
 
