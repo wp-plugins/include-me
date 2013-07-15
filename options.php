@@ -1,5 +1,5 @@
 <?php
-if (wp_verify_nonce($_POST['_wpnonce'], 'save')) {
+if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'save')) {
     $options = stripslashes_deep($_POST['options']);
     update_option('includeme', $options);
 }

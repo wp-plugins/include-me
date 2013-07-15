@@ -39,6 +39,10 @@ No screenshots are available.
 
 == Changelog ==
 
+= 1.0.7 =
+
+* Performce improvements
+
 = 1.0.6 =
 
 * Improvements
