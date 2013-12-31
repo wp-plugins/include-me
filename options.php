@@ -20,11 +20,11 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'save')) {
             <input type="hidden" name="nr" value="include-me">
             <input type="submit" value="Go">
         </form>
-
+        <!--
         <a href="https://www.facebook.com/satollo.net" target="_blank"><img style="vertical-align: bottom" src="http://www.satollo.net/images/facebook.png"></a>
-
+        -->
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5PHGDGNHAYLJ8" target="_blank"><img style="vertical-align: bottom" src="http://www.satollo.net/images/donate.png"></a>
-        <a href="http://www.satollo.net/donations" target="_blank">Even <b>1$</b> helps: read more</a>
+        <a href="http://www.satollo.net/donations" target="_blank">Even <b>2$</b> helps: read more</a>
     </div>
 
     <h2>Include Me</h2>

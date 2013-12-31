@@ -4,12 +4,10 @@
   Plugin Name: Include Me
   Plugin URI: http://www.satollo.net/plugins/include-me
   Description: Include external HTML or PHP in any post or page.
-  Version: 1.0.7
+  Version: 1.0.8
   Author: Stefano Lissa
   Author URI: http://www.satollo.net
  */
-
-
 
 if (is_admin()) {
     include dirname(__FILE__) . '/admin.php';

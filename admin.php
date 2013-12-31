@@ -8,8 +8,6 @@ function includeme_admin_head() {
 }
 add_action('admin_head', 'includeme_admin_head');
 
-
-
 function includeme_admin_menu() {
     add_options_page('Include Me', 'Include Me', 'manage_options', 'include-me/options.php');
 }
