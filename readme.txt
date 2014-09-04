@@ -1,9 +1,10 @@
 === Include Me ===
-Tags: php, include, execute
+Tags: php, include, php execute, external page, iframe
 Requires at least: 2.5
-Tested up to: 3.8
+Tested up to: 4.0
 Stable tag: trunk
 Donate link: http://www.satollo.net/donations
+Contributors: satollo
 
 Include Me helps to include any external file (textual, HTML or PHP) in posts or pages.
 
@@ -38,6 +39,11 @@ No questions have been asked.
 No screenshots are available.
 
 == Changelog ==
+
+= 1.0.9 =
+
+* Compatibility check for WP 4.0
+* readme.txt fix
 
 = 1.0.8 =
 

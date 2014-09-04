@@ -36,14 +36,16 @@ if (isset($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'save')) {
     </p>
 
     <form action="" method="post">
-<?php wp_nonce_field('save') ?>
+        <?php wp_nonce_field('save') ?>
         <table class="form-table">
             <tr>
                 <th>Execute shortcodes on included files</th>
                 <td>
-                    <input type="checkbox" name="options[shortcode]" value="1" <?php echo isset($options['shortcode']) ? 'checked' : ''; ?> />
-                    if checked short codes (like [gallery]) contained in included files will be executed as if they where inside the
-                    post or page body content. Probably usage of this feature is very rare.
+                    <input type="checkbox" name="options[shortcode]" value="1" <?php echo isset($options['shortcode']) ? 'checked' : ''; ?>>
+                    <p class="description">
+                        if checked short codes (like [gallery]) contained in included files will be executed as if they where inside the
+                        post or page body content. Probably usage of this feature is very rare.
+                    </p>
                 </td>
             </tr>    
         </table>
