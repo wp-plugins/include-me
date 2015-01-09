@@ -1,7 +1,7 @@
 === Include Me ===
 Tags: php, include, php execute, external page, iframe
 Requires at least: 2.5
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: trunk
 Donate link: http://www.satollo.net/donations
 Contributors: satollo
@@ -14,15 +14,23 @@ Include Me helps to include in posts or pages external files usually to be share
 between different posts or pages or that contains PHP or other code that can be
 compromised by the visual editor.
 
+The use is immediate: the shortcode [includeme] is all that you need (see the documentation
+on [Include Me official page](http://www.satollo.net/plugins/include-me)).
+
 The best way to use it is to include functionalities
 written in external PHP that will be rendered in post body or to include pieces of
 javascript that will be hard to add with WordPress editor.
 
-An example can be the code supplied by chat services or widgets to be shown in a
-full page (not in a side bar) like the ones of Facebook or MyBlogLog.
-
 Inclusions can be rendered with IFRAME if needed to create boxes that display
 external web pages.
+
+This plugin is made of few line of code, ultralite!
+
+Other plugins by Stefano Lissa:
+
+* [Hyper Cache](http://www.satollo.net/plugins/hyper-cache)
+* [Newsletter](http://www.thenewsletterplugin.com)
+* [Header and Footer](http://www.satollo.net/plugins/header-footer)
 
 == Installation ==
 
@@ -39,6 +47,10 @@ No questions have been asked.
 No screenshots are available.
 
 == Changelog ==
+
+= 1.1.0 =
+
+* Fixes
 
 = 1.0.9 =
 

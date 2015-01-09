@@ -4,7 +4,7 @@
   Plugin Name: Include Me
   Plugin URI: http://www.satollo.net/plugins/include-me
   Description: Include external HTML or PHP in any post or page.
-  Version: 1.0.9
+  Version: 1.1.1
   Author: Stefano Lissa
   Author URI: http://www.satollo.net
  */
@@ -44,7 +44,7 @@ if (is_admin()) {
         return $buffer;
     }
 
-    // Here because the funciton MUST be define before the "add_shortcode" since 
+    // Here because the funciton MUST be define before the "add_shortcode" since
     // "add_shortcode" check the function name with "is_callable".
     add_shortcode('includeme', 'includeme_call');
 }
